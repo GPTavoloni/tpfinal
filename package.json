@@ -1,5 +1,5 @@
 {
-  "name": "mi-app-fullstack",
+  "name": "tpfinal",
   "version": "1.0.0",
   "scripts": {
     "install-client": "cd client && npm install",
