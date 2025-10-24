@@ -6,15 +6,14 @@ const PORT = process.env.PORT || 5000;
 
 // API routes
 app.use(express.json());
-app.use('/api', require('./routes')); // tus rutas API
 
 // Servir archivos estáticos de React
 app.use(express.static(path.join(__dirname, '../client/build')));
 
 // Todas las rutas no-API retornan la app React
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-});
+//app.get('*', (req, res) => {
+//  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+//});
 
 
 app.get('/api/data', (req, res) => {
