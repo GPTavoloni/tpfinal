@@ -23,6 +23,7 @@ app.get('/api/data', (req, res) => {
     // Add more data as needed
   ];
   res.json(data);
+  console.log(req.headers)
 });
 
 app.listen(PORT, () => {
